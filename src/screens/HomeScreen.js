@@ -32,7 +32,7 @@ const HomeScreen = ({navigation}) => {
         <Button
           style={styles.marginButton}
           title="Go to SquareScreen Demo"
-          onPress={() => navigation.navigate('Square')}>
+          onPress={() => navigation.navigate('SquareWithReducer')}>
         </Button>
 
         {/* <TouchableOpacity
