@@ -6,9 +6,10 @@ const HomeScreen = ({navigation}) => {
     <View>
         <Text style={styles.text}>Hi All</Text>
         <Button
-          style={styles.marginButton}
           onPress={() => navigation.navigate('Component')}
-          title="Go to Component Demo"> 
+          title="Go to Component Demo"
+          style={styles.marginButton}
+> 
         </Button>
 
         <Button
@@ -25,6 +26,12 @@ const HomeScreen = ({navigation}) => {
 
         <Button
           style={styles.marginButton}
+          title="Go to Counter with Reducer Demo"
+          onPress={() => navigation.navigate('CounterWithReducer')}>
+        </Button>
+
+        <Button
+          style={styles.marginButton}
           title="Go to ColorScreen Demo"
           onPress={() => navigation.navigate('Color')}>
         </Button>
@@ -32,7 +39,25 @@ const HomeScreen = ({navigation}) => {
         <Button
           style={styles.marginButton}
           title="Go to SquareScreen Demo"
+          onPress={() => navigation.navigate('Square')}>
+        </Button>
+
+        <Button
+          style={styles.marginButton}
+          title="Go to SquareScreen with Reducer Demo"
           onPress={() => navigation.navigate('SquareWithReducer')}>
+        </Button>
+
+        <Button
+          style={styles.marginButton}
+          title="Go to Text Screen Demo"
+          onPress={() => navigation.navigate('Text')}>
+        </Button>
+
+        <Button
+          style={styles.marginButton}
+          title="Go to Box Screen Demo"
+          onPress={() => navigation.navigate('Box')}>
         </Button>
 
         {/* <TouchableOpacity
@@ -46,11 +71,12 @@ const HomeScreen = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
-  text: {
-    fontSize: 30
-  },
   marginButton:{
-    marginTop:10
+    margin: 10
+  },
+  text: {
+    fontSize: 30,
+    margin:10
   }
 });
 
